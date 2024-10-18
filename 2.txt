@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double a,b,c;
+    double a1, b1, c1;
+    double m,l;
+    printf("»щем медиану и биссектрису к третьей стороне \n");
+    printf("¬ведите первую сторону ");
+    scanf("%lf \n", &a);
+    printf("¬ведите вторую сторону ");
+    scanf("%lf \n", &b);
+    printf("¬ведите третью сторону ");
+    scanf("%lf \n", &c);
+    a1=pow(a,2);
+    b1=pow(b,2);
+    c1=pow(c,2);
+    m=(sqrt(2*a1+2*b1-c1))/2;
+    l=(sqrt(a*b*(a+b+c)*(a+b-c)))/(a+b);
+    printf("%lf %lf",m, l);
+    return 0;
+}
