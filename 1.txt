@@ -1,0 +1,9 @@
+a=input()
+c1=int(a)//100
+c3=int(a)%10
+c2=str(a)[1:2]
+s=str(c3)+str(c2)+str(c1)+'0'
+b=s[1:2]
+d=s[2:3]
+cs=str(c3)+d+b+'0'
+print(cs)
